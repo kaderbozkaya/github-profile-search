@@ -29,7 +29,7 @@ export default function GitHubSearch() {
   };
 
   return (
-    <div className="deneme">
+    <>
       <div className="main-container">
         <form onSubmit={handleSubmit}>
           <div className="form-container">
@@ -108,6 +108,6 @@ export default function GitHubSearch() {
           </div>
         )}
       </div>
-    </div>
+    </>
   );
 }
