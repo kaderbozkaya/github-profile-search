@@ -39,7 +39,7 @@ function App() {
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
-            <button type="submit" className="button-style">
+            <button type="submit" className="search-button">
               <MdOutlinePersonSearch className="button-icon" />
             </button>
           </div>
@@ -51,7 +51,7 @@ function App() {
             <div className="profile-content">
               <div className="profile-img">
                 <img
-                  className="img-style"
+                  className="profile-avatar"
                   src={profile.avatar_url}
                   alt="Avatar"
                 />

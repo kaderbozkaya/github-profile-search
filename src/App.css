@@ -17,6 +17,8 @@
 body {
   background-color: #4a4b98;
     color: #fefefe;
+    width: 100%;
+    height: 100vh;
 }
 
 .main-container {
@@ -55,7 +57,7 @@ body {
   font-size: 1.3rem;
 }
 
-.button-style {
+.search-button {
   width: 6rem;
   border-radius: 3rem;
   background-color: #6a6195;
@@ -67,7 +69,7 @@ body {
   border: none;
   outline: none;
 }
-.button-style:hover, .button-style:focus {
+.search-button:hover, .search-button:focus {
   background-color: #554986;
   border: none;
   outline: none;
@@ -89,7 +91,7 @@ body {
   display: flex;
   gap: 2rem;
 }
-.img-style {
+.profile-avatar {
   width: 12rem;
   height: 12rem;
   border-radius: 100%;
@@ -120,7 +122,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 2rem;
   height: 6rem;
   width: 30rem;
   border-radius: 2.5rem;
@@ -147,14 +149,59 @@ body {
  font-size: 1.2rem;
 display:inline-flex;
 align-items: center; 
-
 gap: .5rem;
 background: #4d4374;
-
 border-radius: 30px;
 padding: 1rem;
 }
 .profile-url:hover {
   color: #4d4374;
   background: white;
+}
+
+@media (max-width: 770px) {
+
+  .main-container {
+    width: 45rem;
+  }
+  .search-input {
+    width: 30rem;
+    height: 2rem;
+    font-size: 1rem;
+  } 
+  .search-input::placeholder {
+    font-size: 1rem;
+  }
+  .search-button {
+    width: 5rem;
+    font-size: 1rem;
+  }
+  .profile-avatar {
+    width: 9rem;
+    height: 9rem;
+  }
+  .profile-name {
+    font-size: 1rem;
+  }
+  .profile-created {
+    font-size: .75rem;
+  }
+  .profile-bio {
+    font-size: 1rem;
+  }
+  .profile-status {
+    height: 4rem;
+    width: 25rem;
+    font-size: 1rem;
+  }
+
+  .profile-location ,
+  .profile-company {
+   font-size: 1rem;
+  }
+  
+  .profile-url {
+   font-size: 1rem;
+  }
+  
 }
