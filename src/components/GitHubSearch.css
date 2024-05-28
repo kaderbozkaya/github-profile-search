@@ -200,12 +200,16 @@ body {
     position: fixed;
     margin: 1rem;
     padding: 1rem;
+    margin-top: 4rem;
   }
   
   .search-input {
     padding: 1rem;
     height: 2.5rem;
     font-size: 1rem;
+  }
+  .search-input::placeholder {
+    font-size: .75rem;
   }
 
   .search-button {
@@ -245,98 +249,5 @@ body {
 }
 
 
- /* @media (min-width: 425px) {
 
-  .main-container {
-    width: 30rem;
-  }
-  .search-input {
-    width: 12rem;
-    height: 1.5rem;
-    font-size: .75rem;
-  } 
-  .search-input::placeholder {
-    font-size: .75rem;
-  }
-  .search-button {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-  .profile-avatar {
-    width: 5rem;
-    height: 5rem;
-    margin-right: -4rem;
-  }
-  .profile-name {
-    font-size: .75rem;
-  }
-  .profile-created {
-    font-size: .5rem;
-  }
-  .profile-bio {
-    font-size: .75rem;
-  }
-  .profile-status {
-    height: 4rem;
-    width: 17rem;
-    font-size: .75rem;
-  }
 
-  .profile-location ,
-  .profile-company {
-   font-size: .75rem;
-  }
-  
-  .profile-url {
-   font-size: .75rem;
-  }
-  
-}  */
-
-/* @media (max-width: 375px) {
-
-    .main-container {
-      width: 23rem;
-    }
-    .search-input {
-      width: 15rem;
-      height: 2rem;
-      font-size: 1rem;
-    } 
-    .search-input::placeholder {
-      font-size: 1rem;
-    }
-    .search-button {
-      width: 4rem;
-      height: 4rem;
-    }
-    .profile-avatar {
-      width: 5.3rem;
-      height: 5.3rem;
-      margin-right: -3rem;
-    }
-    .profile-name {
-      font-size: 1rem;
-    }
-    .profile-created {
-      font-size: .75rem;
-    }
-    .profile-bio {
-      font-size: 1rem;
-    }
-    .profile-status {
-      height: 4rem;
-      width: 18rem;
-      font-size: .9rem;
-    }
-  
-    .profile-location ,
-    .profile-company {
-     font-size: 1rem;
-    }
-    
-    .profile-url {
-     font-size: 1rem;
-    }
-    
-  }  */
