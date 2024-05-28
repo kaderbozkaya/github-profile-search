@@ -163,10 +163,10 @@ text-decoration: none;
   
 }
 
- @media (max-width: 770px) {
+ /* @media (min-width: 425px) {
 
   .main-container {
-    width: 20rem;
+    width: 30rem;
   }
   .search-input {
     width: 12rem;
@@ -192,7 +192,7 @@ text-decoration: none;
     font-size: .5rem;
   }
   .profile-bio {
-    font-size: 1rem;
+    font-size: .75rem;
   }
   .profile-status {
     height: 4rem;
@@ -209,4 +209,52 @@ text-decoration: none;
    font-size: .75rem;
   }
   
-} 
+}  */
+
+@media (max-width: 375px) {
+
+    .main-container {
+      width: 23rem;
+    }
+    .search-input {
+      width: 15rem;
+      height: 2rem;
+      font-size: 1rem;
+    } 
+    .search-input::placeholder {
+      font-size: 1rem;
+    }
+    .search-button {
+      width: 4rem;
+      height: 4rem;
+    }
+    .profile-avatar {
+      width: 5.3rem;
+      height: 5.3rem;
+      margin-right: -3rem;
+    }
+    .profile-name {
+      font-size: 1rem;
+    }
+    .profile-created {
+      font-size: .75rem;
+    }
+    .profile-bio {
+      font-size: 1rem;
+    }
+    .profile-status {
+      height: 4rem;
+      width: 18rem;
+      font-size: .9rem;
+    }
+  
+    .profile-location ,
+    .profile-company {
+     font-size: 1rem;
+    }
+    
+    .profile-url {
+     font-size: 1rem;
+    }
+    
+  } 
