@@ -13,19 +13,21 @@ body {
 
 }
 
+
 .main-container {
-  background-color: #3b2f66;
+   background-color: #3b2f66; 
   display: flex;
-  width: 45rem;
+  width: 47rem;
   border-radius: 3rem;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
   gap: 3rem;
   padding: 4rem;
-  margin-top: 7rem;
-}
+  /* margin-top: 7rem; */
+  margin-top: 3rem;
 
+}
 .form-container {
   display: flex;
   align-items: center;
@@ -83,28 +85,30 @@ body {
 
 .profile-content {
   display: flex;
-  gap: 2rem;
 }
 
 .profile-avatar {
-  width: 12rem;
-  height: 12rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 100%;
+  margin-right: -3rem;
 }
 
-.profile-details {
+/* .profile-details {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .profile-desc {
   display: flex;
-  justify-content: space-evenly;
+  margin: 2rem;
   align-items: center;
+  justify-content: center;
 }
 
 .profile-name {
   font-size: 1.5rem;
+  margin-right: 2rem;
 }
 
 .profile-created {
@@ -119,18 +123,46 @@ body {
 }
 
 .profile-status {
+  
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-top: 2rem;
-  height: 6rem;
-  width: 30rem;
+  height: auto;
+  width: 40rem;
   border-radius: 2.5rem;
-  background: #4d4374;
+  /* background: #4d4374; */
   font-size: 1.2rem;
   text-align: center;
   padding: 1rem;
   box-shadow: 0 16px 30px -10px rgba(0, 0, 0, 0.2);
+}
+.repo-button {
+  color: white;
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  background: #4d4374;
+  border-radius: 30px;
+  padding: .5rem;
+border-color: wheat;
+cursor: pointer;
+
+
+}
+.repo-list {
+  width: 12rem;
+}
+.repo-list-item {
+  list-style: none;
+  display: flex;
+  width: 20rem;
+ 
+}
+.repo-list-item a {
+  text-decoration:none;
+  text-align: left;
+  padding: 0.5rem;
+color: #b1a7a7;
 }
 
 .profile-info {
@@ -144,6 +176,13 @@ body {
   display: flex;
   align-items: center;
 }
+.profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 3rem;
+
+}
 
 .profile-url {
   color: white;
@@ -155,6 +194,7 @@ body {
   border-radius: 30px;
   padding: 1rem;
   text-decoration: none;
+
 }
 
 .profile-url:hover {
@@ -197,7 +237,7 @@ body {
 
 @media (max-width: 480px) {
   .main-container {
-    position: fixed;
+    /* position: fixed; */
     margin: 1rem;
     padding: 1rem;
     margin-top: 4rem;
@@ -221,33 +261,59 @@ body {
   .profile-avatar {
     width: 4rem;
     height: 4rem;
-    margin-right: -3.7rem;
+    margin-right: -2rem;
   }
+
   .profile-name {
-    font-size: .75rem;
+    font-size: .7rem;
   }
   .profile-created {
-    font-size: .5rem;
+    font-size: .4rem;
   }
   .profile-bio {
-    font-size: .75rem;
+    font-size: .5rem;
   }
 
   .profile-status {
-    height: 4rem;
-    width: 15rem;
+    display: flex;
+    width: 20rem;
+    height: auto;
     font-size: .75rem;
+    margin-left: -2rem;
   }
+  .repo-button {
+    color: white;
+    font-size: .3rem;
+  
+  }
+  .repo-list {
+    width: 6rem;
+  }
+  .repo-list-item {
+    list-style: none;
+    display: flex;
+    width: 7rem;
+   
+  }
+
+  
   .profile-location ,
   .profile-company {
-   font-size: .75rem;
+   font-size: .5rem;
   }
   
   .profile-url {
-   font-size: .75rem;
+   font-size: .5rem;
   }
 }
 
 
 
 
+@media (max-width: 320px) {
+  .profile-status {
+  
+    width: 16rem;
+   
+  }
+ }
