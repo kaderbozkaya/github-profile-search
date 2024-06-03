@@ -59,7 +59,6 @@ body {
   color: white;
   display: flex;
   align-items: center;
-  /* font-size: 1.5rem; */
   justify-content: center;
   border: none;
   outline: none;
@@ -95,10 +94,7 @@ flex-direction: column;
 
 }
 .profile-avatar {
-  width: 7rem;
-  height: 7rem;
   border-radius: 100%;
-
 }
 
 
@@ -132,10 +128,8 @@ flex-direction: column;
   justify-content: space-between;
   margin-top: 2rem;
   height: auto;
-  width: 40rem;
   border-radius: 2.5rem;
   /* background: #4d4374; */
-  font-size: 1.2rem;
   text-align: center;
   padding: 1rem;
   box-shadow: 0 16px 30px -10px rgba(0, 0, 0, 0.2);
@@ -146,7 +140,7 @@ flex-direction: column;
   display: inline-flex;
   align-items: center;
   background: #4d4374;
-  border-radius: 30px;
+  border-radius: 2rem;
   padding: .5rem;
 border-color: wheat;
 cursor: pointer;
@@ -213,13 +207,7 @@ color: #b1a7a7;
     align-items: center;
     justify-content: center;
   }
-/* .form-container {
- display: flex;
- align-items: center;
- justify-content: center;
- gap: 1rem;
-} */
- 
+
 .search-input {
  width: 11rem;
  padding: 1rem .5rem;
@@ -262,10 +250,12 @@ color: #b1a7a7;
   font-size: .75rem;
 }
 .profile-status {
-  /* justify-content:space-around; */
-  width: 20rem;
+  width: 19rem;
   font-size: .75rem;
   padding: .5rem;
+}
+.profile-status a{
+  width: 10rem;
 }
 
 .repo-button {
@@ -285,296 +275,66 @@ color: #b1a7a7;
  .profile-url {
   font-size: .75rem;
  }
-/*
-
-
-
-
-.profile-url {
- color: white;
- font-size: 1.2rem;
- display: inline-flex;
- align-items: center;
- gap: .5rem;
- background: #4d4374;
- border-radius: 30px;
- padding: 1rem;
- text-decoration: none;
 
 }
-
-.profile-url:hover {
- color: #4d4374;
- background: white;
-} */
-
-  
-}/* @media (min-width: 425px) {
-  .main-container {
-    width: 80%;
-    
-  }
-  
-  .search-input {
-    width: 15rem;
-    font-size: .7rem;
-    padding: 0.3rem;
-  }
-  .search-input::placeholder {
-    font-size: 1rem;
-    padding: 0.5rem;
-  }
-
-  .search-button {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  .profile-avatar {
-    width: 6rem;
-    height: 6rem;
-  }
-
-  .profile-status {
-    width: 100%;
-    margin: 1rem;
-    font-size: .5rem;
-  }
-
-  .profile-info {
-    gap: 1rem;
-  }
-  
-.error-msg {
- font-size: 1rem;
-}
-
-.profile-desc {
- display: flex;
- margin: 2rem;
- align-items: center;
- justify-content: center;
-}
-
-.profile-name {
- font-size: .75rem;
- margin-left: 1rem;
-
-}
-
-.profile-created {
- font-size: .5rem;
-}
-
-.profile-bio {
-margin-top: 3rem;
- font-size: .75rem;
-
-}
-
-
-.repo-button {
- font-size: .3rem;
-}
-
-
-.profile-info {
- display: flex;
- justify-content: space-evenly;
- margin: 2rem 0;
-}
-
-.profile-location, .profile-company {
- font-size: .75rem;
-}
-
-
-.profile-url {
- font-size: .75rem;
-}
-
-
-} */
-
-/* @media (min-width: 768px) {
-  .main-container {
-    width: 80%;
-  }
-  
-  .search-input {
-    width: 100%;
-    font-size: 2rem;
-    padding: 2rem;
-  }
-  .search-input::placeholder {
-    font-size: 1.3rem;
-    
-  }
-
-  .search-button {
-    width: 6rem;
-    height: 4rem;
-  }
-
-  .profile-avatar {
-    width: 10rem;
-    height: 10rem;
-  }
-
-  .profile-status {
-    width: 100%;
-    font-size: 1.5rem;
-  }
-
-
-  .profile-info {
-    gap: 1rem;
-  }
-  
-.error-msg {
+@media (min-width: 768px) {
+.search-input {
+ padding: 2rem 1rem;
  font-size: 2rem;
+} 
+
+.search-input::placeholder{
+  font-size: 1.5rem;
+}
+ .search-button {
+ width: 6rem;
+ height: 4rem;
+} 
+.button-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.error-msg {
+  font-size: 2rem;
 }
 
+.profile-avatar {
+  width: 8rem;
+  height: 8rem;
 
+}
 
 .profile-name {
- font-size: 1.5rem;
-}
+  font-size: 2rem;
 
+}
 .profile-created {
- font-size: 1rem;
+  font-size: 1rem;
 }
-
 .profile-bio {
-margin: 4rem;
- font-size: 1.5rem;
-
+  font-size: 1.5rem;
 }
-
+.profile-status {
+  width: auto;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
 
 .repo-button {
- font-size: 1rem;
+  font-size: 1rem;
+  margin: 1rem;
 }
-
 .profile-location, .profile-company {
- font-size: 1rem;
+  font-size: 1.5rem;
+
+ }
+.profile-link {
+  margin: 2rem;
 }
 
+ .profile-url {
+  font-size: 1.5rem;
+ }
 
-.profile-url {
- font-size: 1.5rem;
 }
 
-
-} */
-
-
- 
-/* @media (min-width:1440px) {
-  .main-container {
-    width: 50%;
-  }
-  
-} */
-/* @media (max-width:375px) {
-  .profile-avatar {
-    width: 6rem;
-    height: 6rem;
-    margin-right: -3rem;
-  }
-
-  .profile-name {
-    font-size: 1rem;
-  }
-  .profile-created {
-    font-size: .5rem;
-  }
-  .profile-bio {
-    font-size: 1rem;
-  }
-  
-} */
-
-
-/* @media (max-width: 480px) {
-  .main-container {
-   
-    margin: 1rem;
-    padding: 1rem;
-    margin-top: 4rem;
-  }
-  
-  .search-input {
-    padding: 1rem;
-    height: 2.5rem;
-    font-size: 1rem;
-  }
-  .search-input::placeholder {
-    font-size: .75rem;
-  }
-
-  .search-button {
-    width: 3rem;
-    height: 2.5rem;
-    font-size: 1rem;
-  }
-
-  .profile-avatar {
-    width: 4rem;
-    height: 4rem;
-    margin-right: -2rem;
-  }
-
-  .profile-name {
-    font-size: .7rem;
-  }
-  .profile-created {
-    font-size: .4rem;
-  }
-  .profile-bio {
-    font-size: .5rem;
-  }
-
-  .profile-status {
-    display: flex;
-    width: 20rem;
-    height: auto;
-    font-size: .75rem;
-    margin-left: -2rem;
-  }
-  .repo-button {
-    color: white;
-    font-size: .3rem;
-  
-  }
-  .repo-list {
-    width: 6rem;
-  }
-  .repo-list-item {
-    list-style: none;
-    display: flex;
-    width: 7rem;
-   
-  }
-
-  
-  .profile-location ,
-  .profile-company {
-   font-size: .5rem;
-  }
-  
-  .profile-url {
-   font-size: .5rem;
-  }
-} */
-
-
-
-
-/* @media (max-width: 320px) {
-  .profile-status {
-  
-    width: 16rem;
-   
-  }
- } */
